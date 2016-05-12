@@ -20,8 +20,7 @@
     <!-- Bootswatch -->
     <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
     <title>Social Deeds</title>
-    <!-- Pie Chart CDN -->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 </head>
 <body>
 <!--NAV BAR-->
@@ -81,20 +80,20 @@
                     <label class="control-label" for="focusedInput">E-mail</label>
                     <div class="infoOneLine">
                         <div class="oneLine" style="margin-left:0;">
-                            <input class="form-control" id="focusedInput" type="email" value="" placeholder="John.Doe@gmail.com">
+                            <input class="form-control" id="focusedInput" type="email" required value="" placeholder="John.Doe@gmail.com">
                             </div>
                             <br>
                         <div class="oneLine">
                             <label class="control-label" for="focusedInput">Password:</label>
-                            <input class="form-control" id="focusedInput" type="password" value="" placeholder="Password">
+                            <input class="form-control" id="focusedInput" type="password" required value="" placeholder="Password">
                             <br>
                         </div>
                        
                         <div class="modal-footer">
-                    <button type="submit" id="enterLogin" class="btn btn-default" align="right">Enter</button>
+                    <button type="submit" formnovalidate="" id="enterLogin" class="btn btn-default" align="right">Enter</button>
                     
                     
-                    <button type="submit" id="signUp" class="btn btn-default" align="left">Sign-Up</button>
+                    <button type="submit"  id="signUp" class="btn btn-default" align="left">Sign-Up</button>
                     <br>
                     <br>
                     
@@ -206,7 +205,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" id="addEvent" class="btn btn-default animated bounce" align="center">Add-A-Deed</button>
+                    <button type="submit" formnovalidate="" id="addEvent" class="btn btn-default animated bounce" align="center">Add-A-Deed</button>
                     <br>
                     <br>
                     <button type="button" class="close" class="btn btn-default" data-dismiss="modal">X</button>
