@@ -186,11 +186,15 @@
                         </div>
                 
                     </div>
-                  <div>
+                  <div class="others">
                     <label class="control-label" for="focusedInput">What Skillsets do you possess?</label><br> 
-                 <input type="checkbox" name="skills" value="skillset1"> IT<br>
-                 <input type="checkbox" name="skills" value="skillset2"> Art<br>
-                 <input type="checkbox" name="skills" value="skillset3">Management<br>
+                 <input  id="check" type="checkbox" name="skills" value="skillset1"> IT<br>
+                 <input  id="check" type="checkbox" name="skills" value="skillset2"> Art<br>
+                 <input  id="check" type="checkbox" name="skills" value="skillset3">Management<br>
+                 <input  id="option"type="checkbox" name="skills" value="skillset3">other<br>
+                 <label  id="other"for="email">Other:</label>
+                 <input type="text" class="form-control" id="other1">
+
                 </div>
                 <br>
                 <div class="oneLine">
@@ -231,8 +235,21 @@ $('#homeButton').click(function(){
 });
 $('#createButton').click(function(){
     $("#createSection").modal('show');
+    $('#other').hide();
+    $('#other1').hide();
 })
+var label=
+$('#other1').keypress(function(e){
+    if(e.keyCode==13){
+        console.log("Enter Key was pressed!")
+   
+    }
+})
+$('#option').click(function(){
+    $('#other').show();
+    $('#other1').show();
 
+})
 
 </script>
 </html>
