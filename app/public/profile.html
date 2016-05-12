@@ -4,7 +4,7 @@
 <head>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
-    <!-- HTML Magic -->    <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
     <!-- App Icon Image -->
     <link rel="apple-touch-icon" href="assets/images/icon.jpg">
@@ -39,6 +39,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="leaderBoards"><a href="#">Leaderboards <span class="sr-only">(current)</span></a></li>
+        <li class="deeds"><a href="#">Deeds<span class="sr-only">(current)</span></a></li>
      </ul>
            <ul class="nav navbar-nav navbar-right">
         <li><a href="#" id="myProfile" data-toggle='modal' class="active"> My Profile</a></li>
@@ -63,9 +64,14 @@
        </div>
   </div>
 </div>
-
+<h1 id="profileTitle" align="center"> THIS IS THE PROFILE PAGE</h1>
 </body>
 <script type=text/javascript>
+  $(window).load(function(){
+    console.log('window has been loaded')
+    
+
+  })
   $("#myProfile").click(function(){
       $('#loginButton').hide()
 
